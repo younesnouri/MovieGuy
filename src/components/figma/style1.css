@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #1C1C1E; /* Dark background color */
+    --secondary-color: #007C89; /* Accent color, for buttons and links */
+    --text-color: #E5E5E5; /* Primary text color */
+    --muted-text-color: #9E9E9E; /* Muted text color for less important text */
+    --background-color: #F8F8F8; /* Light background color for content areas */
+    --border-radius: 8px; /* Border radius for cards and buttons */
+    --transition-speed: 0.3s; /* Standard transition speed for hover effects */
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+ 
+  
+  
+  
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tab {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: color var(--transition-speed), border-color var(--transition-speed);
+  }
+  
+  .tab:hover,
+  .tab.active {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .movie-grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .movie-card {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed);
+  }
+  
+  /* .movie-card:hover {
+    transform: translateY(-5px);
+  } */
+  
+  
+  /* ... Add more specific styles for your components here ... */
+  

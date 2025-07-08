@@ -1,0 +1,18 @@
+.image-collection {
+    /* Set up columns */
+    column-count: 4;
+    column-gap: 1em;
+  }
+  
+  .image-item {
+    /* Break-inside is used to prevent images from splitting across columns */
+    break-inside: avoid;
+    margin-bottom: 1em;
+  }
+  
+  .image-item img {
+    width: 100%;
+    display: block;
+    border-radius: 8px; /* Optional: if you want rounded corners */
+  }
+  

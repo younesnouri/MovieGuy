@@ -1,0 +1,35 @@
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    width: 60px; 
+    height: 60px;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border-radius: 50%; /* Creates a circle */
+  padding: 15px; /* Adjust the padding to control the size of the circle */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #3498db;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for transform property */
+  transform-origin: 50% 50%;
+  }
+  
+  .floating-button:hover {
+    background-color: #2980b9; /* Change the background color on hover */
+  }
+  
+  /* Add any additional styles for the plus sign icon */
+  .floating-button i {
+    font-size: 30px; /* Adjust the font size for the plus sign */
+    font-weight: bold; /* Make the plus sign bold */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .floating-button.active {
+    transform: translateX(-50%) rotate(45deg); /* Tilt the button when active */
+  }
+
+  

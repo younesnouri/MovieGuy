@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .movie_carddd1 {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 250px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+  }
+  
+  .movie_carddd1:hover {
+    transform: scale(1.02);
+  }
+
+  .movie_carddd2 {
+    position: relative;
+    display: block;
+    width: 660px;
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+  }
+  
+  .movie_carddd2:hover {
+    transform: scale(1.02);
+  }
+  
+  .info_section1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px;
+  }
+  
+  .movie_header1{
+    padding: 15px;
+  }
+
+  .movie_desc1 {
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+  }
+  
+  .movie_header1 h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .movie_header1 h4 {
+    color: #9ac7fa;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .movie_header1 .minutes,
+  .movie_header1 .type {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    font-size: 9px;
+  }
+  
+  .movie_header1 .type {
+    color: #cee4fd;
+    margin-left: 1px;
+  }
+  
+  .movie_header1 .locandina {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    height: 100px;
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .movie_desc1 .text {
+    color: #cfd6e1;
+    font-size: 15px;
+  }
+  
+  .movie_social1 {
+    height: 10%;
+    position: absolute;
+    bottom: 10px; /* Adjust the top position as needed */
+  left: 10px
+    
+  }
+  .movie_rating {
+    height: 10%;
+    position: absolute;
+    bottom: 30px; /* Adjust the top position as needed */
+   left: 20px
+    
+  }
+  
+  .movie_social1 ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .movie_social1 ul li {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.3s;
+    transition-delay: 0.15s;
+    margin: 0 10px;
+  }
+  
+  .movie_social1 ul li:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .movie_social1 ul li i {
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .blur_back1 {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    right: 0;
+    background-size: cover;
+    border-radius: 11px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .movie_header1 {
+      width: 60%;
+    }
+  
+    
+  
+    .info_section1 {
+      background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);
+    }
+  
+    .blur_back1 {
+      width: 80%;
+      background-position: -100% 10% !important;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .movie_card1 {
+      width: 95%;
+      margin: 70px auto;
+      min-height: 350px;
+      height: auto;
+    }
+  
+    .blur_back1 {
+      width: 100%;
+      background-position: 50% 50% !important;
+    }
+  
+    .movie_header1 {
+      width: 100%;
+      margin-top: 85px;
+    }
+  
+    .movie_desc1 {
+      width: 100%;
+    }
+  
+    .info_section1 {
+      background: linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%);
+      display: inline-grid;
+    }
+  }
+  
+  #bright1,
+  #tomb1,
+  #ave1 {
+    margin-bottom: 200px;
+  }
+  
+  #bright1:hover,
+  #tomb1:hover,
+  #ave1:hover {
+    box-shadow: 0px 0px 120px -55px rgba(255, 51, 0, 0.5);
+  }
+  
+  .bright_back1,
+  .tomb_back1,
+  .ave_back1 {
+    background-size: cover;
+    border-radius: 11px;
+  }
+  
+  #bright1 {
+    box-shadow: 0px 0px 150px -45px rgba(255, 51, 0, 0.5);
+  }
+  
+  #tomb1 {
+    box-shadow: 0px 0px 150px -45px rgba(19, 160, 134, 0.6);
+  }
+  
+  #ave1 {
+    box-shadow: 0px 0px 150px -45px rgba(199, 147, 75, 0.7);
+  }
+  
+  .reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 0px; /* Adjust the gap as needed */
+ /* Set a maximum width for the container */
+ margin: 0 auto;
+ margin-left: 85px;
+
+  }
